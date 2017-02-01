@@ -1,0 +1,35 @@
+.basdepage{
+  margin-top: 100px;
+  background-color: rgb(255, 123, 1);
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  flex-direction: row;
+  color: white;
+  font-family: 'Fauna One', serif;
+  font-size: 17px;
+  flex-wrap: wrap;
+}
+ul li {
+  list-style: none;
+
+}
+ul li a{
+  text-decoration: none;
+  color: white;
+  font-size:15px;
+  font-family: 'Fauna One', serif;
+}
+.network img{
+  margin-top: 10px;
+  width: 20px;
+  height: 30px;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .fond{
+    height: 200px;
+    width: auto;
+  }
+}

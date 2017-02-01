@@ -1,0 +1,460 @@
+body{
+  margin: 0;
+}
+
+.fond{
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/fond.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-attachment: fixed;
+}
+
+#logo{
+  background-image: url(../images/logo1.png);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 600px;
+  filter: drop-shadow(0px 0px 6px black);
+  animation: fadeIn 3s 2;
+
+}
+
+.flechebas img{
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  /*margin-top: 30px;*/
+  bottom: 0px;
+  animation: movedown 2s infinite;
+}
+
+@keyframes movedown{
+  0%{
+    bottom: 0px;
+  }
+  50%{
+    bottom: 10px;
+  }
+  100%{
+    bottom: 0px;
+  }
+
+
+}
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+/*#fleche:hover{
+background-color: rgba(107, 233, 86, 0.68);
+border-radius: 50%;
+opacity: 0.5;
+}*/
+#fleche,a{
+  text-align: center;
+}
+/*---------------------------------------BAS DE PAGE----------------------------------------*/
+#contenu{
+  background-color:rgba(250, 244, 186, 0.6);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.carre{
+  margin-top: 30px;
+  height: 132px;
+  width: 200px;
+  background-color: grey;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-radius: 15px;
+  transition: 1s;
+}
+
+.carre:hover{
+  height: 182px;
+  width:250px;
+  transition: 0.9s;
+}
+
+
+.carre2{
+  display: flex;
+  flex-direction: column;
+
+}
+
+/*.fleche{
+height: 40px;
+width: 40px;
+}
+.fleche img{
+height: 40px;
+width: 40px;
+animation: fadeIn 3s infinite;
+}*/
+.margetop{
+  margin-top: 3px;
+}
+.nompays{
+
+  height: 20px;
+  width: 200px;
+  color: black;
+  font-family: 'Chewy', cursive;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  background-color:rgba(129, 136, 111, 0);
+  text-align: center;
+}
+.nompays p{
+  margin: 0;
+}
+/*.fleche:hover{
+background-color: rgba(107, 233, 86, 0.68);
+border-radius: 50%;
+opacity: 0.5;
+}*/
+
+
+/*------------------------------------BACKGROUND---PAYSSS--------------------------------------*/
+.chypre{
+  background-image: url(../Drapeau/flag+/chypre+.jpg);
+  background-position: center;
+  background-size: cover;
+}
+/*.chypre:hover h1{
+text-align: center;
+visibility: visible;
+line-height: 140px
+}
+
+h1{
+visibility: hidden;
+margin: 0;
+}*/
+.bolivie{
+  background-image: url(../Drapeau/flag+/bolivie+.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.ukraine{
+  background-image: url(../Drapeau/flag+/ukraine+.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.maroc{
+  background-image: url(../Drapeau/flag+/maroc+.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.norvege{
+  background-image: url(../Drapeau/flag+/norvège+.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.lesmaldives{
+  background-image: url(../Drapeau/flag+/maldives+.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.mexique{
+  background-image: url(../Drapeau/flag+/mexique+.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.latanzanie{
+  background-image: url(../Drapeau/flag+/tanzanie+.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.portugal{
+  background-image: url(../Drapeau/flag+/portugal+.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.cambodge{
+  background-image: url(../Drapeau/flag+/cambodge+.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.brunei{
+  background-image: url(../Drapeau/flag+/brunei+.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.mongolie{
+  background-image: url(../Drapeau/flag+/mongolie+.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/*------------------------------FIN BACKGROUND PAYS---------------------------------------------*/
+
+/*-------------------------BACKGROUND PLATS-----------------------------*/
+
+.box1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.photos{
+  border: 2px solid rgb(255, 123, 1);
+  background-size: cover;
+  background-position:center;
+  height: 200px;
+  width: 200px;
+
+}
+
+/*foood IMAGES*/
+/*BOLIVIE*/
+.soupebolivie{
+  background-image: url(../imagefood/bolivie/soupe.jpg);
+}
+.painbolivie{
+  background-image: url(../imagefood/bolivie/pain.jpg);
+}
+.entreebolivie{
+  background-image: url(../imagefood/bolivie/entree.jpg);
+}
+.platbolivie{
+  background-image: url(../imagefood/bolivie/plat.jpg);
+}
+.dessertbolivie{
+  background-image: url(../imagefood/bolivie/dessert.jpg);
+}
+.boissonbolivie{
+  background-image: url(../imagefood/bolivie/boisson.jpg);
+}
+/*BRUNEI*/
+.soupebrunei{
+  background-image: url(../imagefood/brunei/soupe.jpg);
+}
+.painbrunei{
+  background-image: url(../imagefood/brunei/pain.jpg);
+}
+.entreebrunei{
+  background-image: url(../imagefood/brunei/entree.jpg);
+}
+.platbrunei{
+  background-image: url(../imagefood/brunei/plat.jpg);
+}
+.dessertbrunei{
+  background-image: url(../imagefood/brunei/dessert.jpg);
+}
+.boissonbrunei{
+  background-image: url(../imagefood/brunei/boisson.jpg);
+}
+/*CAMBODGE*/
+.soupecambodge{
+  background-image: url(../imagefood/cambodge/soupe.jpg);
+}
+.paincambodge{
+  background-image: url(../imagefood/cambodge/pain.jpg);
+}
+.entreecambodge{
+  background-image: url(../imagefood/cambodge/entree.jpg);
+}
+.platcambodge{
+  background-image: url(../imagefood/cambodge/plat.jpg);
+}
+.dessertcambodge{
+  background-image: url(../imagefood/cambodge/dessert.jpg);
+}
+.boissoncambodge{
+  background-image: url(../imagefood/cambodge/boisson.jpeg);
+}
+/*CHYPRE*/
+.soupechypre{
+  background-image: url(../imagefood/chypre/soupe.jpg);
+}
+.painchypre{
+  background-image: url(../imagefood/chypre/pain.jpg);
+}
+.entreechypre{
+  background-image: url(../imagefood/chypre/entree.jpg);
+}
+
+.platchypre{
+  background-image: url(../imagefood/tanzanie/plat.jpg);
+}
+.dessertchypre{
+  background-image: url(../imagefood/tanzanie/dessert.jpg);
+}
+.boissonchypre{
+  background-image: url(../imagefood/tanzanie/boisson.jpg);
+}
+/*TANZANIE*/
+.soupetanzanie{
+  background-image: url(../imagefood/tanzanie/soupe.jpg);
+}
+.paintanzanie{
+  background-image: url(../imagefood/tanzanie/pain.jpg);
+}
+.entreetanzanie{
+  background-image: url(../imagefood/tanzanie/entree.jpg);
+}
+
+.plattanzanie{
+  background-image: url(../imagefood/tanzanie/plat.jpg);
+}
+.desserttanzanie{
+  background-image: url(../imagefood/tanzanie/dessert.jpg);
+}
+.boissontanzanie{
+  background-image: url(../imagefood/tanzanie/boisson.jpg);
+}
+/*LESMALDIVES*/
+.soupemaldives{
+  background-image: url(../imagefood/maldives/soupe.jpg);
+}
+.painmaldives{
+  background-image: url(../imagefood/maldives/pain.jpg);
+}
+.entreemaldives{
+  background-image: url(../imagefood/maldives/entree.jpg);
+}
+
+.platmaldives{
+  background-image: url(../imagefood/maldives/plat.jpg);
+}
+.dessertmaldives{
+  background-image: url(../imagefood/maldives/dessert.jpg);
+}
+.boissonmaldives{
+  background-image: url(../imagefood/maldives/boisson.jpg);
+}
+/*MAROC*/
+.soupemaroc{
+  background-image: url(../imagefood/maroc/soupe.jpg);
+}
+.painmaroc{
+  background-image: url(../imagefood/maroc/pain.jpg);
+}
+.entreemaroc{
+  background-image: url(../imagefood/maroc/entree.jpg);
+}
+.platmaroc{
+  background-image: url(../imagefood/maroc/plat.jpeg);
+}
+.dessertmaroc{
+  background-image: url(../imagefood/maroc/dessert.jpg);
+}
+.boissonmaroc{
+  background-image: url(../imagefood/maroc/boisson.jpg);
+}
+/*MEXIQUE*/
+.soupemexique{
+  background-image: url(../imagefood/mexique/soupe.jpg);
+}
+.painmexique{
+  background-image: url(../imagefood/mexique/pain.jpg);
+}
+.entreemexique{
+  background-image: url(../imagefood/mexique/entree.jpg);
+}
+.platmexique{
+  background-image: url(../imagefood/mexique/plat.jpg);
+}
+.dessertmexique{
+  background-image: url(../imagefood/mexique/dessert.jpg);
+}
+.boissonmexique{
+  background-image: url(../imagefood/mexique/boisson.jpg);
+}
+/*MONGoLIE*/
+.soupemongolie{
+  background-image: url(../imagefood/mongolie/soupe.jpg);
+}
+.painmongolie{
+  background-image: url(../imagefood/mongolie/pain.jpg);
+}
+.entreemongolie{
+  background-image: url(../imagefood/mongolie/entree.jpg);
+}
+.platmongolie{
+  background-image: url(../imagefood/mongolie/plat.jpeg);
+}
+.dessertmongolie{
+  background-image: url(../imagefood/mongolie/dessert.jpg);
+}
+.boissonmongolie{
+  background-image: url(../imagefood/mongolie/boisson.jpeg);
+}
+/*NORVEGE*/
+.soupenorvege{
+  background-image: url(../imagefood/norvege/soupe.jpg);
+}
+.painnorvege{
+  background-image: url(../imagefood/norvege/pain.jpg);
+}
+.entreenorvege{
+  background-image: url(../imagefood/norvege/entree.jpg);
+}
+.platnorvege{
+  background-image: url(../imagefood/norvege/plat.jpg);
+}
+.dessertnorvege{
+  background-image: url(../imagefood/norvege/dessert.jpg);
+}
+.boissonnorvege{
+  background-image: url(../imagefood/norvege/boisson.jpg);
+}
+/*PORTUGAL*/
+.soupeportugal{
+  background-image: url(../imagefood/portugal/soupe.jpg);
+}
+.painportugal{
+  background-image: url(../imagefood/portugal/pain.jpg);
+}
+.entreeportugal{
+  background-image: url(../imagefood/portugal/entree.jpg);
+}
+.platportugal{
+  background-image: url(../imagefood/portugal/plat.jpg);
+}
+.dessertportugal{
+  background-image: url(../imagefood/portugal/dessert.jpg);
+}
+.boissonportugal{
+  background-image: url(../imagefood/portugal/boisson.jpg);
+}
+/*UKRAINE*/
+.soupeukraine{
+  background-image: url(../imagefood/ukraine/soupe.jpg);
+}
+.painukraine{
+  background-image: url(../imagefood/ukraine/pain.jpg);
+}
+.entreeukraine{
+  background-image: url(../imagefood/ukraine/entree.jpg);
+}
+.platukraine{
+  background-image: url(../imagefood/ukraine/plat.jpg);
+}
+.dessertukraine{
+  background-image: url(../imagefood/ukraine/dessert.jpg);
+}
+.boissonukraine{
+  background-image: url(../imagefood/ukraine/boisson.jpg);
+}
+/*-------------------------FIN BACKGROUND PAYS---------------------------*/
